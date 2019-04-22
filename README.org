@@ -4,6 +4,7 @@ program if it is compiled for it's instruction set architecture.
 
 ** Example programs
 *** t1.s
+#+begin_src 
 MOV R0, #1
 MOV R1, #2
 MOV R2, #3
@@ -16,12 +17,10 @@ AND R6, R3, R4
 CMP R3, R3
 CMP R1, R3
 CMP R7, R4
-
-***** 2
-***** 3
-***** 4
+#+end_src
 
 *** t2.s
+#+begin_src 
 MOV R0, #4
 MOV R1, R0, LSL#1
 MOV R2, #10
@@ -32,8 +31,10 @@ LDR R6, [R2{,#4}]
 LDR R7, [R3]
 HALT
 MOV R0, #1
+#+end_src
 
 *** t3.s
+#+begin_src 
 MOV R0, SW_BASE
 LDR R0, [R0] 
 LDR R2, [R0] 
@@ -46,8 +47,10 @@ SW_BASE:
 .word 0x0140
 LEDR_BASE:
 .word 0x0100
+#+end_src
 
 *** t4.s
+#+begin_src 
 MOV R0,X
 LDR R1,[R0]
 MOV R2,Y
@@ -57,5 +60,6 @@ X:
 .word 0xABCD
 Y:
 .word 0x0000
+#+end_src
 
 
