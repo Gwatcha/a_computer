@@ -1,6 +1,6 @@
 * RISC Computer
 A basic implementation of a computer. It is [[https://www.wikiwand.com/simple/Turing_complete][turing complete]], so it can run any
-program if it is compiled for it's instruction set architecture. 
+program if it is compiled for its instruction set architecture. 
 
 ** Example programs
 *** t1.s
